@@ -72,8 +72,9 @@
         "Address": "Address",
         "Gender": "Gender",
         "Position": "Position",
-        "RoleId": "RoleId",
+        "role": "RoleId",
         "Image": "Image",
-        "Save": "Save"
+        "Save": "Save",
+        "edit": "Edit user"
     }
 }

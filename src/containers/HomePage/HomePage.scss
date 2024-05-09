@@ -35,7 +35,7 @@
         background: #f5f5f5;
     }
 
-    &.section-outstanding-doctor {
+    &.section-outstading-doctor {
         background: #f5f5f5;
     }
 
@@ -51,11 +51,8 @@
                 width: 400px;
                 height: 165px;
 
-
-
-
                 &.section-specialty {
-                    background: url('../../assets/bia.jpg');
+                    background-image: url('../../assets/bia.jpg');
                     background-position: center center;
                     background-repeat: no-repeat;
                     background-size: cover;
@@ -63,18 +60,18 @@
                 }
 
                 &.section-madical-facility {
-                    background: url('../../assets/bia.jpg');
+                    background-image: url('../../assets/bia.jpg');
                     background-position: center center;
                     background-repeat: no-repeat;
                     background-size: cover;
                     background-color: #eee;
                 }
 
-                &.section-outstanding-doctor {
-                    background: url('../../assets/bia.jpg');
+                &.section-outstading-doctor {
+                    // background: url('../../assets/bia.jpg');
                     width: 120px;
                     height: 120px;
-                    border: 50%;
+                    border-radius: 50%;
                     background-position: center center;
                     background-repeat: no-repeat;
                     background-size: cover;
@@ -82,7 +79,7 @@
                 }
 
                 &.section-handbook {
-                    background: url('../../assets/bia.jpg');
+                    background-image: url('../../assets/bia.jpg');
                     background-position: center center;
                     background-repeat: no-repeat;
                     background-size: cover;
@@ -148,8 +145,8 @@
     .section-customize {
         padding: 5px;
 
-        .customize-border {
-            border: 1px solid orange;
+        .customsize-border {
+            border: 1px solid rgb(255, 166, 0);
             padding: 20px;
 
             .outer-bg {

@@ -1,35 +1,93 @@
 import actionTypes from '../actions/actionTypes';
 
 const initialState = {
+    isLoadingGetGender:false,
     genders: [],
     roles :[],
-    positions :[]
+    positions :[],
+    users:[],
+    topDoctors:[]
 }
 
 const adminReducer = (state = initialState, action) => {
     switch (action.type) {
         case actionTypes.FETCH_GENDER_START:
-            console.log('duy check gender start',action)
-            return {
-                ...state
-                
-            }
-        case actionTypes.FETCH_GENDER_SUCCESS:
-            
-             let copyState ={...state};
-             copyState.genders=action.data;
-             console.log('duy check gender success', copyState )
-            
+            let copyState = {...state};
+            copyState.isLoadingGetGender=true;
             return {
                 ...copyState
                 
+            }
+        case actionTypes.FETCH_GENDER_SUCCESS:
+                state.genders=action.data;
+                state.isLoadingGetGender=false;
+            return {
+                ...state
+                
             }                       
         case actionTypes.FETCH_GENDER_FAIDED:
-           console.log('duy check gender faided', action)
+            state.isLoadingGetGender=false;
+            state.genders=[];
             return {
                 ...state
                 
             }
+        case actionTypes.FETCH_POSITION_SUCCESS:
+                state.positions=action.data;
+                
+            return {
+                ...state
+                
+            }   
+        case actionTypes.FETCH_POSITION_FAIDED:
+                state.positions=[];
+                
+            return {
+                ...state
+                
+            }      
+        case actionTypes.FETCH_ROLE_SUCCESS:
+                state.roles=action.data;
+                
+            return {
+                ...state
+                
+            }   
+        case actionTypes.FETCH_ROLE_FAIDED:
+                state.roles=[];
+                
+            return {
+                ...state
+                
+            }
+            case actionTypes.FETCH_ALL_USERS_SUCCESS:
+                state.users=action.users;
+                
+            return {
+                ...state
+                
+            }
+            case actionTypes.FETCH_ALL_USERS_FAILDED:
+                state.users=[];
+                
+            return {
+                ...state
+                
+            }  
+            case actionTypes.FETCH_ALL_DOCTORS_SUCCESS:
+                state.topDoctors=action.dataDotors;
+                
+            return {
+                ...state
+                
+            } 
+            case actionTypes.FETCH_ALL_DOCTORS_FAILDED:
+                state.topDoctors=[];
+                
+            return {
+                ...state
+                
+            }    
         default:
             return state;
     }

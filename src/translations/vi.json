@@ -72,8 +72,9 @@
         "Address": "Địa Chỉ",
         "Gender": "Giới Tính",
         "Position": "Chức Vụ",
-        "RoleId": "Vai trò",
+        "role": "Vai trò",
         "Image": "Hình Ảnh",
-        "Save": "Lưu"
+        "Save": "Lưu",
+        "edit": "Lưu thay đổi"
     }
 }
