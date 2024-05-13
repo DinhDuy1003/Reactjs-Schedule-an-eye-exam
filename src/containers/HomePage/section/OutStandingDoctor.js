@@ -23,19 +23,23 @@ class OutStandingDoctor extends Component {
         }
      }
      componentDidMount(){
-         this.props.loadTopDoctors();
+        this.props.loadTopDoctors();
      }
     render() {
         let {language}=this.props;
        let arrDoctors=this.state.arrDoctors; 
-    //    arrDoctors = arrDoctors.concat(arrDoctors).concat(arrDoctors);
-    //    console.log("Duy Chanel:",arrDoctors);
+      // arrDoctors = arrDoctors.concat(arrDoctors).concat(arrDoctors);
+       console.log("Duy Chanel:",arrDoctors);
        return(
         <div className="section-share section-outstanding-doctor">
             <div className="section-container">
                 <div className="section-header">
-                        <span className="title-section">Bác sĩ nổi bật tuần qua</span>
-                        <button className="btn-section"> Xem Thêm</button>
+                        <span className="title-section">
+                            <FormattedMessage id="homepage.outstanding-doctor"/>
+                        </span>
+                        <button className="btn-section">
+                        <FormattedMessage id="homepage.more-infor"/>
+                        </button>
                 </div>
                 <div className="section-body"> 
                     <Slider {...this.props.settings}>
@@ -45,8 +49,11 @@ class OutStandingDoctor extends Component {
                             if(item.image){
                                 imageBase64= new Buffer(item.image,'base64').toString('binary');
                             }
-                            let nameVi = `${item.positionData.valueVi} , ${item.lastName} ,${item.firstName}`;
-                            let nameEn = `${item.positionData.valueEn} , ${item.lastName} ,${item.firstName}`;
+                            // let nameVi = `${item.positionData.valueVi} , ${item.lastName} ,${item.firstName}`;
+                            // let nameEn = `${item.positionData.valueEn} , ${item.lastName} ,${item.firstName}`;
+
+                            let nameVi = `Bác Sĩ, ${item.lastName} ,${item.firstName}`; 
+                            let nameEn = `Bác Sĩ, ${item.lastName} ,${item.firstName}`;
                             return(
                                 <div className= "section-customize" key={index}>
                                     <div className="customsize-border">
@@ -56,6 +63,7 @@ class OutStandingDoctor extends Component {
                                             />
                                         </div>
                                         <div className="position text-center">
+                                      
                                             <div>{language === LANGUAGES.VI ? nameVi : nameEn}</div>
                                             <div>Cơ Xương Khớp</div>
 
@@ -95,7 +103,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        loadTopDoctors:() => dispatch(actions.fetchTopDoctor())
+       loadTopDoctors:() => dispatch(actions.fetchTopDoctor())
     };
 };
 
