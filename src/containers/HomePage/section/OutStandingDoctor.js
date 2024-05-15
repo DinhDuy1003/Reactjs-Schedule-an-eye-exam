@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-
 import { FormattedMessage } from 'react-intl';
 import Slider from "react-slick";
-
 import * as actions from '../../../store/actions';
 import { LANGUAGES } from '../../../utils';
-
+import { withRouter } from 'react-router';
 
 class OutStandingDoctor extends Component {
+
      constructor (props){
         super(props)
         this.state = {
@@ -25,11 +24,16 @@ class OutStandingDoctor extends Component {
      componentDidMount(){
         this.props.loadTopDoctors();
      }
+     handleViewlDoctor =(doctor)=>{
+        console.log('Duy DocTor',doctor);
+        this.props.history.push(`/detail-doctor/${doctor.id}`)
+       
+     }
+
+
     render() {
         let {language}=this.props;
        let arrDoctors=this.state.arrDoctors; 
-      // arrDoctors = arrDoctors.concat(arrDoctors).concat(arrDoctors);
-       console.log("Duy Chanel:",arrDoctors);
        return(
         <div className="section-share section-outstanding-doctor">
             <div className="section-container">
@@ -55,7 +59,7 @@ class OutStandingDoctor extends Component {
                             let nameVi = `Bác Sĩ, ${item.lastName} ,${item.firstName}`; 
                             let nameEn = `Bác Sĩ, ${item.lastName} ,${item.firstName}`;
                             return(
-                                <div className= "section-customize" key={index}>
+                                <div className= "section-customize" key={index} onClick={()=>this.handleViewlDoctor(item)}>
                                     <div className="customsize-border">
                                         <div className="outer-bg">
                                             <div className="bg-image section-outstading-doctor"                                 
@@ -107,4 +111,4 @@ const mapDispatchToProps = dispatch => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(OutStandingDoctor);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(OutStandingDoctor));
