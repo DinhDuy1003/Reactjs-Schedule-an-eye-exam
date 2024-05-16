@@ -5,10 +5,16 @@ import logo1 from'../../assets/logo1.png';
 import { FormattedMessage } from 'react-intl';
 import { LANGUAGES } from '../../utils';
 import {changeLanguageApp} from "../../store/actions";
+import { withRouter } from 'react-router';
 
 class Homeheader extends Component {
      changeLanguage=(language)=>{
         this.props.changeLanguageAppRedux(language)
+     }
+     returnTohome = () =>{
+        if(this.props.history) {
+            this.props.history.push(`/home`) 
+                }  
      }
     render() {
        let language=this.props.language;
@@ -19,7 +25,7 @@ class Homeheader extends Component {
                <div className="home-header-content">
                 <div className="left-content">
                     <i className="fas fa-bars"></i>
-                    <img className="header-logo" src={logo1} />
+                    <img className="header-logo" src={logo1} onClick={()=>this.returnTohome()} />
                 </div>
                 <div className="center-content">
                     <div className="child-content">
@@ -135,4 +141,4 @@ const mapDispatchToProps = dispatch => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Homeheader);
+export default withRouter( connect(mapStateToProps, mapDispatchToProps)(Homeheader));
