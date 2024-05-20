@@ -28,6 +28,7 @@ class ManageDoctor extends Component {
     componentDidMount(){
         this.props.fetchAllDoctor()
     }
+
     buildDataInputSelect = (inputData)=>{
         let result= [];
         let {language} = this.props;
@@ -102,6 +103,8 @@ class ManageDoctor extends Component {
             })
         }
       };
+
+      
       handleOnChangeDesc=(event)=>{
         this.setState({
             description:event.target.value

@@ -83,5 +83,11 @@
     "homepage": {
         "outstanding-doctor": "Bác sĩ nổi bật",
         "more-infor": "Xem Thêm"
+    },
+    "manage-shedule": {
+        "title": "Quản lý kế hoạch khám bệnh của bác sĩ",
+        "choose-doctor": "Chọn Bác Sĩ",
+        "choose-date": "Chọn Ngày",
+        "save": "Lưu Thông Tin"
     }
 }

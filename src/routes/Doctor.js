@@ -25,6 +25,7 @@ const mapStateToProps = state => {
     return {
         DoctorMenuPath: state.app.DoctorMenuPath,
         isLoggedIn:state.user.isLoggedIn,
+        
 
     };
 };
