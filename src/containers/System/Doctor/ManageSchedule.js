@@ -9,6 +9,10 @@ import DatePicker from '../../../components/Input/DatePicker';
 import moment from 'moment';
 import {toast} from "react-toastify";
 import _ from 'lodash';
+import { saveBulksScheduledoctor } from '../../../services/userService';
+
+
+
 
 class ManageSchedule extends Component {
     constructor(props){
@@ -97,7 +101,7 @@ class ManageSchedule extends Component {
         }
     }
 
-    handleSaveSchedule = () =>{
+    handleSaveSchedule = async () =>{
         let {rangeTime, selectedDoctor,currrntDate} = this.state;
         let result =[]
         if(!currrntDate){
@@ -108,24 +112,33 @@ class ManageSchedule extends Component {
             toast.error("invalid selected doctor");
             return;
         }
-        let formatedDate= moment(currrntDate).format(dateFormat.SEND_TO_SERVER)
+        //let formatedDate= moment(currrntDate).format(dateFormat.SEND_TO_SERVER)
+        let formatedDate= new Date(currrntDate).getTime();
+
+
          if(rangeTime && rangeTime.length > 0){
             let selectedTime = rangeTime.filter(item => item.isSelected === true)
             if(selectedTime && selectedTime.length >0){
-                selectedTime.map(schedule =>{
+                selectedTime.map((schedule,index) =>{
                     let object = {}
                     object.doctorId = selectedDoctor.value;
-                    object.data = formatedDate;
-                    object.time = schedule.keyMap;
+                    object.date = formatedDate;
+                    object.timeType = schedule.keyMap;
                     result.push(object);
                 })
                
             }else{
-                toast.error(" Invalid selected time!")
+                toast.error(" Invalid selected time!");
+                return;
             }
           
          }
-         console.log('duycckckckck', result)
+         let res = await saveBulksScheduledoctor({
+            arrSchedule : result,
+            doctorId: selectedDoctor.value,
+            formatedDate: formatedDate
+         })
+         
     }
 
     render() {
