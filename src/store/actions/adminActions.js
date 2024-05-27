@@ -263,19 +263,21 @@ export const saveDetaiDoctors = (data) =>{
     return async (dispatch,getState)=>{
         try {
             let res = await saveDetaiDoctorservice(data);
+            
             if(res && res.errCode === 0){
                 toast.success("Save infor doctor succeed");
                 dispatch({
                     type:actionTypes.SAVE_DETAIL_DOCTORS_SUCCESS,
                 })
             }else{
-                toast.error("error infor doctor succeed");
+                console.log('err res', res)
+                toast.error("error infor doctor failded");
                 dispatch({
                     type:actionTypes.SAVE_DETAIL_DOCTORS_FAILDED,                  
                 })
             }
         } catch (e) {
-            toast.error("error infor doctor succeed");
+            toast.error("error infor doctor failded");
             dispatch({
                 type:actionTypes.SAVE_DETAIL_DOCTORS_FAILDED,
                
