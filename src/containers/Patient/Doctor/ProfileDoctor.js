@@ -6,6 +6,7 @@ import NumberFormat from 'react-number-format';
 import { LANGUAGES } from '../../../utils';
 import _ from 'lodash';
 import moment from 'moment';
+import { FormattedMessage } from 'react-intl';
 class ProfileDoctor extends Component {  
 
     constructor(props){
@@ -57,7 +58,7 @@ async componentDidUpdate(prevProps,prevState,snapshot){
         return(
             <>
             <div>{time} - {date}</div>
-            <div>Mien Phi Dat Lich</div>
+            <div><FormattedMessage  id="patient.booking-modal.priceBooking"/></div>
             </>
         )
     }
@@ -103,7 +104,7 @@ async componentDidUpdate(prevProps,prevState,snapshot){
                 </div>
             </div>
             <div className="price">
-                Gia kham:
+            <FormattedMessage  id="patient.booking-modal.price"/>
                 {dataProfile && dataProfile.Doctor_Infor && language === LANGUAGES.VI
                 && 
                 

@@ -103,6 +103,20 @@
             "detail": "Xem chi tiết",
             "payment": "Bệnh nhân có thể thanh toán chi phí dưới hình thức:",
             "hide-price": "Ẩn bảng giá"
+        },
+        "booking-modal": {
+            "title": "Thông tin đặt lịch khám bệnh",
+            "fullName": "Giá kiểm tra",
+            "phonenumber": "Số điện thoại",
+            "email": "Địa chỉ email",
+            "address": "Địa chỉ liên lạc",
+            "reason": "Lý do khám",
+            "birthday": "Ngày sinh",
+            "gender": "Giới Tính",
+            "btnConfirm": "Xác nhận",
+            "btnCancel": "Hủy",
+            "priceBooking": "Miễn Phí đặt Lịch",
+            "price": "Giá Khám"
         }
     },
     "admin": {
