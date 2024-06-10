@@ -82,7 +82,8 @@
     },
     "homepage": {
         "outstanding-doctor": "Last Week's featured doctor",
-        "more-infor": "More Infor"
+        "more-infor": "More Infor",
+        "specialty-poplular": "Popular specialty"
     },
     "manage-shedule": {
         "title": "Manage doctor's medical examination plans",
@@ -106,7 +107,7 @@
         },
         "booking-modal": {
             "title": "Information for scheduling medical examination",
-            "fullName": "Check price",
+            "fullName": "FullName",
             "phonenumber": "Phone number",
             "email": "Email address",
             "address": "Contact address",
@@ -131,7 +132,9 @@
             "province": "Province",
             "nameClinic": "Clinic's name",
             "addressClinic": "Clinic's address",
-            "note": "Note"
+            "note": "Note",
+            "specialty": "Specialty",
+            "select-clinic": "Select clinic"
         }
     }
 }

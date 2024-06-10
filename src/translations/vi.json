@@ -82,7 +82,8 @@
     },
     "homepage": {
         "outstanding-doctor": "Bác sĩ nổi bật",
-        "more-infor": "Xem Thêm"
+        "more-infor": "Xem Thêm",
+        "specialty-poplular": "Chuyên khoa phổ biến"
     },
     "manage-shedule": {
         "title": "Quản lý kế hoạch khám bệnh của bác sĩ",
@@ -106,7 +107,7 @@
         },
         "booking-modal": {
             "title": "Thông tin đặt lịch khám bệnh",
-            "fullName": "Giá kiểm tra",
+            "fullName": "Họ và tên",
             "phonenumber": "Số điện thoại",
             "email": "Địa chỉ email",
             "address": "Địa chỉ liên lạc",
@@ -131,7 +132,9 @@
             "province": "Tỉnh thành",
             "nameClinic": "Tên phòng khám",
             "addressClinic": "Địa chỉ của phòng khám",
-            "note": "Ghi chú"
+            "note": "Ghi chú",
+            "specialty": "Chọn chuyên khoa",
+            "select-clinic": "Chọn phòng khám"
         }
     }
 }

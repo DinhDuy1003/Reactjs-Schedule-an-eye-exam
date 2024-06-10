@@ -7,6 +7,8 @@ import { LANGUAGES } from '../../../utils';
 import _ from 'lodash';
 import moment from 'moment';
 import { FormattedMessage } from 'react-intl';
+import { Link } from 'react-router-dom';
+
 class ProfileDoctor extends Component {  
 
     constructor(props){
@@ -67,7 +69,10 @@ async componentDidUpdate(prevProps,prevState,snapshot){
 
     render() {
         let {dataProfile}= this.state;
-        let {language,isShowDescriptionDoctor, dataTime}= this.props;
+        let {language,isShowDescriptionDoctor, dataTime,
+            isShowPrice,isShowLinkDetail,doctorId
+
+        }= this.props;
 
         let nameVi='';
         let nameEn='';
@@ -103,7 +108,16 @@ async componentDidUpdate(prevProps,prevState,snapshot){
                     </div>
                 </div>
             </div>
-            <div className="price">
+            {isShowLinkDetail === true && 
+            <div className="view-detail-doctor">
+                <Link to={`/detail-doctor/${doctorId}`}>Xem Thêm</Link>
+
+            </div>
+            
+
+            }
+            {isShowPrice === true &&
+                <div className="price">
             <FormattedMessage  id="patient.booking-modal.price"/>
                 {dataProfile && dataProfile.Doctor_Infor && language === LANGUAGES.VI
                 && 
@@ -128,6 +142,8 @@ async componentDidUpdate(prevProps,prevState,snapshot){
                 />
                 }
             </div>
+            }
+            
           </div>
         );
     }
