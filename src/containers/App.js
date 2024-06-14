@@ -17,6 +17,7 @@ import DetailDoctor from './Patient/Doctor/DetailDoctor.js';
 import Doctor from '../routes/Doctor.js';
 import DetailSpecialty from './System/Specialty/DetailSpecialty.js';
 import DetailClinic from './System/Clinic/DetailClinic.js';
+import verifyEmail from './Patient/verifyEmail.js';
 
 class App extends Component {
 
@@ -58,6 +59,7 @@ class App extends Component {
                                 <Route path={path.DETAIL_DOCTOR} component={DetailDoctor}/> 
                                 <Route path={path.DETAIL_SPCIALTY} component={DetailSpecialty}/> 
                                 <Route path={path.DETAIL_CLINIC} component={DetailClinic}/> 
+                                <Route path={path.VERIFY_EMAIL_BOOKING} component={verifyEmail}/> 
 
                           
                             </Switch>
