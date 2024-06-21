@@ -4,10 +4,12 @@
         display: flex;
         padding-left: 60px;
         .content-left {
-            width: 30%;
-            background: center center no-repeat;
             width: 160px;
             height: 160px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #eee;
             border-radius: 50%;
             margin: 10px 30px;
         }
@@ -44,9 +46,9 @@
         }
     }
     .detail-infor-doctor{
-       border-top: 1px solid #dddd;
-       border-bottom: 1px solid #dddd;
-        background-color: #dddd;
+    //    border-top: 1px solid #dddd;
+    //    border-bottom: 1px solid #dddd;
+        background-color: white;
         padding: 10px 100px;
 
         h3{

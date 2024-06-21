@@ -10,15 +10,16 @@ class HomeFooter extends Component {
     render() {
        
        return(
-        <div className="home-footer">
-           <p>&copy; 2024 Duy 
-            <a target="_blank" href="#">New Tab. &#8594; Click Here &#8592; </a>
-
-           </p>
-          ccc
-        </div>
+        <div class="home-footer">
+        <p>&copy; 2024 BookingCare</p>
+        <p>
+            <a href="#" target="_blank" class="footer-link" data-text="New Tab → Click Here ←">New Tab → Click Here ←</a>
+        </p>
+    </div>
+    
       
        );
+       
     }
 
 }

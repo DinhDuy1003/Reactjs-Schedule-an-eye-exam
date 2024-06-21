@@ -90,7 +90,7 @@ async componentDidUpdate(prevProps,prevState,snapshot){
                     </div>
                 <div className="content-right">
                     <div className="up">
-                        {language === LANGUAGES.VI ? nameEn:nameVi}
+                        {language === LANGUAGES.VI ? nameVi:nameEn}
                     </div>
                     <div className="down">
                         {isShowDescriptionDoctor === true ?

@@ -82,14 +82,14 @@ class ManageClinic extends Component {
             <div className="ms-title">  Quản Lý cơ sở y tế</div>
                 <div className="add-new-specialty-row">
                     <div className="col-6 form-group">
-                        <label> Tên chuyên khoa</label>
+                        <label> Tên cơ sở y tế</label>
                         <input
                         className="form-control" type="text" value={this.state.name}
                             onChange={(event) =>this.handleOnchangeInput(event,'name')}
                        />
                     </div>
                     <div className="col-6 form-group">
-                        <label> Ảnh chuyen khoa</label>
+                        <label> Ảnh cơ sơ y tế</label>
                         <input
                         className="form-control-file" type="file" 
                             onChange={(event) =>this.handleOnchangeImage(event)}

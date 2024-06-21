@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
 import './ManagePatient.scss';
-import { FormattedMessage } from 'react-intl';
 import DatePicker from '../../../components/Input/DatePicker';
-import { getAllPatientForDoctor,postSendRemedy } from '../../../services/userService';
+import { getAllPatientForDoctor } from '../../../services/userService';
+import { postSendRemedy } from '../../../services/userService';
 import moment from 'moment';
 import { LANGUAGES } from '../../../utils';
 import RemedyModal from './RemedyModal';
@@ -79,7 +79,6 @@ class ManagePatient extends Component {
         let res =await postSendRemedy({
             email:dataChild.email,
             imgBase64:dataChild.imgBase64,
-
             doctorId:dataModal.doctorId,
             patientId: dataModal.patientId,
             timeType:dataModal.timeType,
@@ -108,6 +107,7 @@ class ManagePatient extends Component {
       }
 
     render() {
+        console.log('duy check data nhe:', this.state)
         let {dataPatient , isOpenRemedyModal,dataModal}=this.state;
         let {language} = this.props;
         return (

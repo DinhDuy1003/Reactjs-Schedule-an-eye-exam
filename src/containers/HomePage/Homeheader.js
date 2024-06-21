@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './HomeHeader.scss';
-import logo1 from'../../assets/logo1.png';
+import Booking from'../../assets/Booking.png';
 import { FormattedMessage } from 'react-intl';
 import { LANGUAGES } from '../../utils';
 import {changeLanguageApp} from "../../store/actions";
@@ -25,7 +25,8 @@ class Homeheader extends Component {
                <div className="home-header-content">
                 <div className="left-content">
                     <i className="fas fa-bars"></i>
-                    <img className="header-logo" src={logo1} onClick={()=>this.returnTohome()} />
+                    <img className="header-logo" src={Booking} onClick={()=>this.returnTohome()}></img>
+                 
                 </div>
                 <div className="center-content">
                     <div className="child-content">
@@ -73,13 +74,13 @@ class Homeheader extends Component {
                 <div className="conten-down">
                 <div className="options">
                     <div className="options-child">
-                    <div className="icon-child"><i className="far fa-hospital"></i></div>
+                    <div className="icon-child"><i className="fas fa-user-md"></i></div>
                     <div className="text-child"><FormattedMessage id="banner.child1"/></div>
                     
                     </div>
                     <div className="options">
                     <div className="options-child">
-                    <div className="icon-child"><i className="far fa-mobile-alt"></i></div>
+                    <div className="icon-child"><i className="fas fa-video"></i></div>
                     <div className="text-child"><FormattedMessage id="banner.child2"/></div>
                     
                     </div>
@@ -87,7 +88,7 @@ class Homeheader extends Component {
                 </div>
                 <div className="options">
                     <div className="options-child">
-                    <div className="icon-child"><i className="far fa-procedures"></i></div>
+                    <div className="icon-child"><i className="fas fa-stethoscope"></i></div>
                     <div className="text-child"><FormattedMessage id="banner.child3"/></div>
                     
                     </div>
@@ -95,7 +96,7 @@ class Homeheader extends Component {
                 </div>
                 <div className="options">
                     <div className="options-child">
-                    <div className="icon-child"><i className="far fa-microscope"></i></div>
+                    <div className="icon-child"><i className="fas fa-flask"></i></div>
                     <div className="text-child"><FormattedMessage id="banner.child4"/></div>
                     
                     </div>
@@ -103,7 +104,7 @@ class Homeheader extends Component {
                 </div>
                 <div className="options">
                     <div className="options-child">
-                    <div className="icon-child"><i className="far fa-user-md"></i></div>
+                    <div className="icon-child"><i className="fas fa-heartbeat"></i></div>
                     <div className="text-child"><FormattedMessage id="banner.child5"/></div>
                     
                     </div>
@@ -111,9 +112,8 @@ class Homeheader extends Component {
                 </div>
                 <div className="options">
                     <div className="options-child">
-                    <div className="icon-child"><i className="far fa-tooth"></i></div>
+                    <div className="icon-child"><i className="far fa-hospital"></i></div>
                     <div className="text-child"><FormattedMessage id="banner.child6"/></div>
-                    
                     </div>
                 </div>
                 </div>
