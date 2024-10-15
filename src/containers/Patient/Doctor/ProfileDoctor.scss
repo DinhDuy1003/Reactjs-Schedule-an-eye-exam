@@ -1,15 +1,18 @@
 .profile-doctor-container{
     .intro-doctor{
-        display: flex;
+        //display: flex;
 
         .content-left{
+            float: left;
             width: 160px;
             height: 160px;
-            border-radius: 50%;
-            background-position: center center;
+            border-radius: 10px;
+            background-position: center;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: contain; /* Thay đổi background-size thành 'contain' */
             background-color: #eee;
+            margin-right: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .content-right{
             width: calc(100%-80px);

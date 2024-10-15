@@ -11,7 +11,7 @@ class HomeFooter extends Component {
        
        return(
         <div class="home-footer">
-        <p>&copy; 2024 BookingCare</p>
+        <p>&copy; 2024 MedBooking</p>
         <p>
             <a href="#" target="_blank" class="footer-link" data-text="New Tab → Click Here ←">New Tab → Click Here ←</a>
         </p>

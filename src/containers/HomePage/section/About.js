@@ -12,12 +12,12 @@ class About extends Component {
        return(
         <div className="section-share section-about">
         <div class="section-about-header">
-    Đặt Lịch Khám Bệnh Tại BookingCare
+    Đặt Lịch Khám Bệnh Tại MedBooking
 </div>
 <div class="section-about-content">
     <div class="content-left">
         <p>
-            BookingCare là nền tảng đặt lịch khám bệnh dành cho mọi người, giúp bạn dễ dàng lựa chọn thời gian và bác sĩ phù hợp.
+        MedBooking là nền tảng đặt lịch khám bệnh dành cho mọi người, giúp bạn dễ dàng lựa chọn thời gian và bác sĩ phù hợp.
         </p>
         <p>
             Chúng tôi cam kết mang đến cho bạn trải nghiệm đặt lịch nhanh chóng và thuận tiện, với thông tin chi tiết về các bác sĩ và các dịch vụ khám bệnh.
@@ -25,10 +25,10 @@ class About extends Component {
     </div>
     <div class="content-right">
         <p>
-            BookingCare cũng cung cấp các tính năng nhắc nhở và thông báo để đảm bảo bạn không bỏ lỡ lịch hẹn quan trọng.
+        MedBooking cũng cung cấp các tính năng nhắc nhở và thông báo để đảm bảo bạn không bỏ lỡ lịch hẹn quan trọng.
         </p>
         <p>
-            Hãy đồng hành cùng BookingCare để chăm sóc sức khỏe một cách thuận tiện và hiệu quả hơn.
+            Hãy đồng hành cùng MedBooking để chăm sóc sức khỏe một cách thuận tiện và hiệu quả hơn.
         </p>
     </div>
 </div>
@@ -44,7 +44,7 @@ class About extends Component {
         <i class="fas fa-phone-alt"></i> Điện thoại: <a href="tel:02473012468">024-7301-2468</a> (7h - 18h)
     </p>
     <p>
-        <i class="far fa-envelope"></i> Email: <a href="mailto:support@bookingcare.vn">support@bookingcare.vn</a> (7h - 18h)
+        <i class="far fa-envelope"></i> Email: <a href="mailto:support@MedBooking.vn">support@MedBooking.vn</a> (7h - 18h)
     </p>
     <p>
         <i class="fas fa-building"></i> Văn phòng tại TP Hồ Chí Minh: Tòa nhà H3, 384 Hoàng Diệu, Phường 6, Quận 4, TP.HCM

@@ -24,12 +24,14 @@ class Homeheader extends Component {
             <div className="home-header-container">
                <div className="home-header-content">
                 <div className="left-content">
+                    {/* <label>BookingCare .</label> */}
                     <i className="fas fa-bars"></i>
-                    <img className="header-logo" src={Booking} onClick={()=>this.returnTohome()}></img>
-                 
+                    {/* <img className="header-logo" src={Booking} onClick={()=>this.returnTohome()}></img> */}
+                    <text className="header-logo" src={Booking} onClick={()=>this.returnTohome()}>MedBooking .</text>
+
                 </div>
                 <div className="center-content">
-                    <div className="child-content">
+                    <div className="child-content1">
                         <div><b><FormattedMessage id="homeheader.speciality"/></b></div>
                         <div className="subs-title"><FormattedMessage id="homeheader.searchdoctor"/></div>
                     </div>
@@ -114,11 +116,12 @@ class Homeheader extends Component {
                     <div className="options-child">
                     <div className="icon-child"><i className="far fa-hospital"></i></div>
                     <div className="text-child"><FormattedMessage id="banner.child6"/></div>
-                    </div>
+                    
                 </div>
                 </div>
                 </div>
-                
+                </div>
+                 
             </div>
             }
             </React.Fragment>

@@ -79,6 +79,9 @@ class Login extends Component {
         return (
            
                 <div className="login-background">
+                    <div className="logon-booking">
+                    MedBooking .
+                    </div>
                     <div className="login-container">
                         <div className="login-content row">
                             <div className="col-12 text-login">Đăng Nhập</div>
@@ -123,6 +126,8 @@ class Login extends Component {
                         </div>
                     </div>
                 </div>
+           
+                
             
         )
     }

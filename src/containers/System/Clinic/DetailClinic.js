@@ -86,7 +86,7 @@ class DetailClinic extends Component {
                                                 isShowLinkDetail={true}
                                                 isShowPrice={false}
                                             />
-                                        </div>
+                                        </div> 
                                     </div>
 
                                     <div className="dt-content-right" >

@@ -1,16 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif; /* Sử dụng font Poppins */
+}
+
 .home-header-container {
+    
     height: 70px;
     width: 100%;
     padding: 0 40px;
     position: sticky;
     top: 0;
     background-color: white;
-    z-index: 100;
+    z-index: 110;
+
+  
+    // Bóng đổ xuống bên dưới
+    box-shadow: 0 12px 9px rgba(0, 0, 0, 0.2); // Bạn có thể tùy chỉnh thông số
+  
+    // Thay đổi độ mạnh của bóng khi cuộn
+    &.scrolled {
+      box-shadow: 0 14px 8px rgba(0, 0, 0, 0.3); // Bóng mạnh hơn khi cuộn xuống
+    }
 
     .home-header-content {
         width: 100%;
         height: 100%;
         display: flex;
+        
 
         .left-content {
             width: 25%;
@@ -18,17 +35,37 @@
             align-items: center;
 
             .header-logo {
-                height: 130px;
-                width: 380px;
-                cursor: pointer;
-                transform: scale(0.5, 0.5);
-                margin-left: -45px;
+                 //height: 140px;
+                 width: 100%;
+                 cursor: pointer;
+                 transform: scale(0.5, 0.5);
+                 margin-left: -45px;
+                 font-size: 55px;
+                 font-weight: 600;
+                 color: #28a745;
+                 padding: 10px 20px;
+                 text-align: center;
+                 border-radius: 5px;
+                 cursor: pointer;
+                 transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng chuyển màu và bóng mờ */
+               
+                 &:hover {
+                   background-color: #28a745; /* Màu nền chuyển sang xanh khi di chuột vào */
+                   color: white; /* Màu chữ chuyển sang trắng khi di chuột vào */
+                   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng đổ */
+                 }
+                 
             }
 
             i {
                 font-size: 25px;
                 color: gray;
                 cursor: pointer;
+                &:hover {
+                    background-color: #28a745; /* Màu nền chuyển sang xanh khi di chuột vào */
+                    color: white; /* Màu chữ chuyển sang trắng khi di chuột vào */
+                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng đổ */
+                  }
             }
         }
 
@@ -37,12 +74,49 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-
-            .child-content {
+            .child-content1 {
+                background-color: #28a745; /* Màu nền mặc định (trong suốt hoặc trắng) */
+                  color: white; /* Màu chữ mặc định là xanh */
+                // border: 2px solid #28a745; /* Viền nút màu xanh */
+                padding: 10px 20px;
+                text-align: center;
+                font-size: 16px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng chuyển màu và bóng mờ */
+              
+                &:hover {
+                //   background-color: #28a745; /* Màu nền chuyển sang xanh khi di chuột vào */
+                //   color: white; /* Màu chữ chuyển sang trắng khi di chuột vào */
+                  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng đổ */
+                }
                 .subs-title {
                     font-weight: 400;
                     font-size: 12px;
+                    
+                }
+            }
 
+            .child-content {
+                background-color: transparent; /* Màu nền mặc định (trong suốt hoặc trắng) */
+                // color: #28a745; /* Màu chữ mặc định là xanh */
+                // border: 2px solid #28a745; /* Viền nút màu xanh */
+                padding: 10px 20px;
+                text-align: center;
+                font-size: 16px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng chuyển màu và bóng mờ */
+              
+                &:hover {
+                  background-color: #28a745; /* Màu nền chuyển sang xanh khi di chuột vào */
+                  color: white; /* Màu chữ chuyển sang trắng khi di chuột vào */
+                  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng đổ */
+                }
+                .subs-title {
+                    font-weight: 400;
+                    font-size: 12px;
+                    
                 }
             }
         }
@@ -61,10 +135,12 @@
             display: flex;
             align-items: center;
             cursor: pointer;
+            
 
             i {
                 font-size: 15px;
                 margin-right: 5px;
+                
             }
         }
 
@@ -82,6 +158,7 @@
 
             &:hover {
                 opacity: 0.8;
+                transform: translateY(-3px); /* Chữ và nút sẽ nhô lên khi di chuột vào */
             }
         }
 
@@ -101,6 +178,7 @@
 
             &:hover {
                 opacity: 0.8;
+                transform: translateY(-3px); /* Chữ và nút sẽ nhô lên khi di chuột vào */
             }
         }
 
@@ -111,17 +189,14 @@
 
 .home-header-banner {
     background: url('../../assets/bia.jpg');
-
-    height: 700px;
+    height: 800px;
     background-size: cover;
     background-position: center;
-
     display: flex;
     flex-direction: column;
 
     .content-up {
         background-image: linear-gradient(rgba(126, 126, 126, 0.25), rgba(255, 255, 255, 0.1));
-
         padding-top: 15px;
         height: 65%;
 
@@ -129,11 +204,8 @@
             text-align: center;
             font-size: 40px;
             text-shadow: 1px 1px 1px #333;
-
             color: white;
             margin-top: 30px;
-
-
         }
 
         .title2 {
@@ -141,19 +213,30 @@
             font-size: 70px;
             text-shadow: 1px 1px 1px #333;
             color: white;
-
         }
 
         .search {
-            width: fit-content;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto;
-            padding: 10px;
-            border-radius: 25px;
-            background: #f7d800;
+             width: fit-content;
+             font-weight: 600;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             margin: 0 auto;
+             padding: 10px;
+             border-radius: 25px;
+             background: #f5f5ef;
 
+            font-size: 50px; /* Kích thước của icon */
+            color: #28a745; /* Màu sắc của icon */
+            transition: color 0.3s ease, transform 0.3s ease; /* Hiệu ứng chuyển đổi màu sắc và phóng to */
+            color: #007bff; /* Màu icon khi hover */
+            transform: scale(1.1); /* Tăng kích thước icon khi hover */
+           font-family: 'Poppins', sans-serif; /* Font chữ đẹp cho văn bản */
+            font-size: 16px;
+            margin-top: 10px;
+            color: #333; /* Màu chữ */
+            text-align: center; /* Canh giữa biểu tượng và văn bản */
+        
             i {
                 margin: 0 5px;
             }
@@ -180,12 +263,15 @@
             display: flex;
             gap: 70px;
             justify-content: center;
+            
 
 
             .options-child {
-
                 width: 150px;
-
+                &:hover {
+                    transform: translateY(-10px); /* Nổi lên 10px */
+                   
+                  }
                 .icon-child {
                     background: white;
                     width: 60px;
@@ -199,6 +285,7 @@
                         color: #49bce2;
                         font-size: 35px;
                     }
+                    
                 }
 
 
@@ -220,5 +307,3 @@
 
 
 }
-
-

@@ -43,8 +43,8 @@ class DetailDoctor extends Component {
         let nameVi='';
         let nameEn='';
         if(detailDoctor && detailDoctor.positionData){
-             nameVi = `${detailDoctor.positionData.valueVi} , ${detailDoctor.lastName} ,${detailDoctor.firstName}`;
-             nameEn = `${detailDoctor.positionData.valueEn} , ${detailDoctor.lastName} ,${detailDoctor.firstName}`;
+             nameVi = `${detailDoctor.positionData.valueVi}  ${detailDoctor.lastName} ${detailDoctor.firstName}`;
+             nameEn = `${detailDoctor.positionData.valueEn}  ${detailDoctor.lastName} ${detailDoctor.firstName}`;
         }
 
 
@@ -53,8 +53,11 @@ class DetailDoctor extends Component {
             <Homeheader isShowBanner={false}/>
             <div className="doctor-detail-container">
                 <div className="intro-doctor">
-                    <div className="content-left"  
-                    style ={{ backgroundImage: `url(${detailDoctor && detailDoctor.image ? detailDoctor.image :''})`}} ></div>
+
+                    <div className="content-left" 
+                    style ={{ backgroundImage: `url(${detailDoctor && detailDoctor.image ? detailDoctor.image :''})`}} >
+                    </div>
+
                     <div className="content-right">
                         <div className="up">
                             {language= LANGUAGES.VI ? nameVi :nameEn}
@@ -67,6 +70,7 @@ class DetailDoctor extends Component {
                            }
                         </div>
                     </div>
+                    
                 </div>
                 <div className="schedule-doctor">
                     <div className="content-left">
@@ -86,6 +90,8 @@ class DetailDoctor extends Component {
                 </div>
                 }
                 </div>
+
+                
                 <div className="comment-doctor"></div>
             </div>
           </>

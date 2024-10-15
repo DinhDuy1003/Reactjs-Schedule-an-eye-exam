@@ -56,8 +56,8 @@ class OutStandingDoctor extends Component {
                             // let nameVi = `${item.positionData.valueVi} , ${item.lastName} ,${item.firstName}`;
                             // let nameEn = `${item.positionData.valueEn} , ${item.lastName} ,${item.firstName}`;
 
-                            let nameVi = `Bác Sĩ, ${item.lastName} ,${item.firstName}`; 
-                            let nameEn = `Bác Sĩ, ${item.lastName} ,${item.firstName}`;
+                            let nameVi = `Bác sĩ ${item.lastName} ${item.firstName}`; 
+                            let nameEn = `Bác sĩ ${item.lastName} ${item.firstName}`;
                             return(
                                 <div className= "section-customize" key={index} onClick={()=>this.handleViewlDoctor(item)}>
                                     <div className="customsize-border">

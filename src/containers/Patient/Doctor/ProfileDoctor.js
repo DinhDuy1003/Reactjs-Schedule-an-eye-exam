@@ -77,8 +77,8 @@ async componentDidUpdate(prevProps,prevState,snapshot){
         let nameVi='';
         let nameEn='';
         if(dataProfile && dataProfile.positionData){
-             nameVi = `${dataProfile.positionData.valueVi} , ${dataProfile.lastName} ,${dataProfile.firstName}`;
-             nameEn = `${dataProfile.positionData.valueEn} , ${dataProfile.firstName} ,${dataProfile.lastName}`;
+             nameVi = `${dataProfile.positionData.valueVi}  ${dataProfile.lastName} ${dataProfile.firstName}`;
+             nameEn = `${dataProfile.positionData.valueEn}  ${dataProfile.firstName} ${dataProfile.lastName}`;
         }
        
         return(

@@ -38,7 +38,7 @@ class Specialty extends Component {
                         <button className="btn-section"> 
                         <FormattedMessage id="homepage.more-infor"/>
                         </button>
-                </div>
+                </div> 
                 <div className="section-body"> 
                     <Slider {...this.props.settings}>
                     {dataSpecialty && dataSpecialty.length > 0 &&
