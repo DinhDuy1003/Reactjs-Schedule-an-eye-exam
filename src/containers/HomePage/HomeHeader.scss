@@ -36,11 +36,11 @@ body {
 
             .header-logo {
                  //height: 140px;
-                 width: 100%;
+                 //width: 100%;
                  cursor: pointer;
                  transform: scale(0.5, 0.5);
-                 margin-left: -45px;
-                 font-size: 55px;
+                 margin-left: -84px;
+                 font-size: 45px;
                  font-weight: 600;
                  color: #28a745;
                  padding: 10px 20px;
@@ -70,7 +70,8 @@ body {
         }
 
         .center-content {
-            width: 55%;
+            width: 100%;
+            
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -78,7 +79,7 @@ body {
                 background-color: #28a745; /* Màu nền mặc định (trong suốt hoặc trắng) */
                   color: white; /* Màu chữ mặc định là xanh */
                 // border: 2px solid #28a745; /* Viền nút màu xanh */
-                padding: 10px 20px;
+                padding: 5px 5px;
                 text-align: center;
                 font-size: 16px;
                 border-radius: 5px;
@@ -101,7 +102,7 @@ body {
                 background-color: transparent; /* Màu nền mặc định (trong suốt hoặc trắng) */
                 // color: #28a745; /* Màu chữ mặc định là xanh */
                 // border: 2px solid #28a745; /* Viền nút màu xanh */
-                padding: 10px 20px;
+                padding: 5px 15px;
                 text-align: center;
                 font-size: 16px;
                 border-radius: 5px;
@@ -189,11 +190,96 @@ body {
 
 .home-header-banner {
     background: url('../../assets/bia.jpg');
-    height: 800px;
+    height: 515px;
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
+    
+    .search-bar {
+        background-color: #f9faff;
+        padding: 20px;
+        border-radius: 10px;
+        max-width: 900px;
+        margin: 0 auto;
+      
+        h2 {
+          font-size: 1.5rem;
+          font-weight: 600;
+          color: #1a1a1a;
+          margin-bottom: 20px;
+        }
+      
+        .search-container {
+          display: flex;
+          align-items: center;
+          background-color: #fff;
+          border-radius: 50px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          padding: 10px;
+          margin-bottom: 15px;
+      
+          .search-input {
+            flex: 1;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 1rem;
+            color: #333;
+            outline: none;
+      
+            &::placeholder {
+              color: #aaa;
+            }
+          }
+      
+          .location-input {
+            display: flex;
+            align-items: center;
+            border-left: 1px solid #ddd;
+            padding-left: 20px;
+            margin-left: 20px;
+      
+            span {
+              font-size: 0.875rem;
+              color: #555;
+              margin-right: 10px;
+            }
+      
+            input {
+              border: none;
+              background: transparent;
+              font-size: 1rem;
+              color: #333;
+              outline: none;
+            }
+          }
+      
+          .search-btn {
+            background-color: #2a64db;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 1rem;
+            margin-left: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+      
+            i {
+              font-size: 1.2rem;
+            }
+      
+            &:hover {
+              background-color: #1d4f9e;
+            }
+          }
+        }
+
+      }
+      
 
     .content-up {
         background-image: linear-gradient(rgba(126, 126, 126, 0.25), rgba(255, 255, 255, 0.1));
@@ -202,7 +288,7 @@ body {
 
         .title1 {
             text-align: center;
-            font-size: 40px;
+            font-size: 35px;
             text-shadow: 1px 1px 1px #333;
             color: white;
             margin-top: 30px;
@@ -210,7 +296,7 @@ body {
 
         .title2 {
             text-align: center;
-            font-size: 70px;
+            font-size: 55px;
             text-shadow: 1px 1px 1px #333;
             color: white;
         }

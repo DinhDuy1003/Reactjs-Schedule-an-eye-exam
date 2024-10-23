@@ -27,7 +27,7 @@ class Homeheader extends Component {
                     {/* <label>BookingCare .</label> */}
                     <i className="fas fa-bars"></i>
                     {/* <img className="header-logo" src={Booking} onClick={()=>this.returnTohome()}></img> */}
-                    <text className="header-logo" src={Booking} onClick={()=>this.returnTohome()}>MedBooking .</text>
+                    <text className="header-logo" src={Booking} onClick={()=>this.returnTohome()}>MedBooking.</text>
 
                 </div>
                 <div className="center-content">
@@ -64,16 +64,29 @@ class Homeheader extends Component {
             </div>
             {this.props.isShowBanner === true &&
             <div className="home-header-banner">
+                
                 <div className="content-up">
                 <div className="title1"><FormattedMessage id="banner.title1"/> </div>
                 <div className="title2"><FormattedMessage id="banner.title2"/></div>
-                <div className="search">
+                {/* <div className="search">
                     <i className='fas fa-search'></i>
                     <input type="text" placeholder='Tìm Chuyên Khoa Khám Bệnh'></input>
-                </div>   
+                </div>    */}
                 </div>
+                <div class="search-bar">
+                    <h2>Find the care you need</h2>
+                    <div class="search-container">
+                        <input type="text" placeholder="Doctors, conditions, or procedures..." class="search-input" />
+                        <div class="location-input">
+                        <span>Location</span>
+                        <input type="text" value="Trảng Bom, ĐỒNG NAI PROVINCE" />
+                        </div>
+                        <button class="search-btn">
+                        <i class="fa fa-search"></i>
+                        </button>
+                    </div>
 
-                <div className="conten-down">
+                    <div className="conten-down">
                 <div className="options">
                     <div className="options-child">
                     <div className="icon-child"><i className="fas fa-user-md"></i></div>
@@ -121,6 +134,9 @@ class Homeheader extends Component {
                 </div>
                 </div>
                 </div>
+
+                    </div>
+
                  
             </div>
             }
