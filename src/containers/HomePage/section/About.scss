@@ -1,0 +1,92 @@
+
+    .section-about-header {
+        font-size: 28px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .section-about-content {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .content-left,
+    .content-right {
+        flex: 1;
+    }
+
+    .content-right {
+        margin-left: 20px;
+    }
+
+    .content-left p,
+    .content-right p {
+        line-height: 1.6;
+        color: #666;
+    }
+
+    .contact-info {
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .contact-info p {
+        position: relative;
+        padding-left: 30px;
+        transition: color 0.3s, transform 0.3s;
+        color: #555;
+    }
+
+    .contact-info p i {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 18px;
+        width: 20px;
+        text-align: center;
+        color: #999;
+    }
+
+    .contact-info p:hover {
+        color:  #28a745;
+        transform: translateX(5px);
+    }
+
+    .contact-info p:hover i {
+        color:  #28a745;
+    }
+
+    .fa-map-marker-alt:before {
+        content: "\f3c5"; /* Unicode của biểu tượng FontAwesome */
+        margin-right: 10px;
+        color:  #28a745;
+    }
+
+    .fa-id-card:before {
+        content: "\f2c2"; /* Unicode của biểu tượng FontAwesome */
+        margin-right: 10px;
+        color:  #28a745;
+    }
+
+    .fa-phone-alt:before {
+        content: "\f879"; /* Unicode của biểu tượng FontAwesome */
+        margin-right: 10px;
+        color:  #28a745;
+    }
+
+    .fa-envelope:before {
+        content: "\f0e0"; /* Unicode của biểu tượng FontAwesome */
+        margin-right: 10px;
+        color:  #28a745;
+    }
+
+    .fa-building:before {
+        content: "\f1ad"; /* Unicode của biểu tượng FontAwesome */
+        margin-right: 10px;
+        color:  #28a745;
+    }
+

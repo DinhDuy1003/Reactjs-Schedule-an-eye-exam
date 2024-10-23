@@ -1,9 +1,23 @@
+// body{
+//     background-image: url("../../assets/login.jpg");
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-attachment: fixed;
+// }
 .login-background {
-    background: linear-gradient(135deg, rgb(121, 219, 219)0%, rgb(233, 129, 111));
+  //  background: linear-gradient(135deg, rgb(121, 219, 219)0%, rgb(233, 129, 111));
+     background: #dfdfdf;
     height: 100vh;
+    .logon-booking{
+        font-size: 30px;
+        font-weight: 700;
+        padding-left: 50px;
+        padding-top: 30px;
+        color: #28a745;
+    }
 
     .login-container {
-
+   
         width: 400px;
         height: 460px;
         background: white;
@@ -23,10 +37,12 @@
                 font-weight: 600;
                 font-size: 26px;
                 padding-top: 12px;
+               
             }
 
             .login-input {
                 margin: 10px 0;
+                font-weight: 600;
 
                 .custom-input-password {
                     position: relative;
@@ -48,12 +64,16 @@
                 border-radius: 15px;
                 border: none;
                 outline: none;
-                background: linear-gradient(135deg, rgb(121, 219, 219)0%, rgb(233, 129, 111));
+               // background: linear-gradient(135deg, rgb(121, 219, 219)0%, rgb(233, 129, 111));
                 font-size: 15px;
+                
+                background: #dfdfdf;
             }
 
             .forgot-password {
+                padding: 20px;
                 font-size: 12px;
+                font-weight: 700;
             }
 
             .text-center {
