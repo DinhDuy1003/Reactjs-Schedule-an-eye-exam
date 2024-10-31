@@ -74,33 +74,35 @@ class Homeheader extends Component {
                 </div>    */}
                 </div>
                 <div class="search-bar">
-                    <h2>Find the care you need</h2>
+                    <h2>Tìm sự chăm sóc bạn cần.</h2>
                     <div class="search-container">
-                        <input type="text" placeholder="Doctors, conditions, or procedures..." class="search-input" />
+                        <input type="text" placeholder="Bác sĩ, tình trạng hoặc thủ tục..." class="search-input" />
                         <div class="location-input">
-                        <span>Location</span>
-                        <input type="text" value="Trảng Bom, ĐỒNG NAI PROVINCE" />
+                        <span>Vị trí</span>
+                        <input type="text" value="Thủ Đức, Hồ Chí Minh" />
                         </div>
                         <button class="search-btn">
                         <i class="fa fa-search"></i>
                         </button>
                     </div>
 
+                    </div>
+                    
                     <div className="conten-down">
                 <div className="options">
                     <div className="options-child">
                     <div className="icon-child"><i className="fas fa-user-md"></i></div>
                     <div className="text-child"><FormattedMessage id="banner.child1"/></div>
-                    
                     </div>
+                    </div>
+
                     <div className="options">
                     <div className="options-child">
                     <div className="icon-child"><i className="fas fa-video"></i></div>
                     <div className="text-child"><FormattedMessage id="banner.child2"/></div>
-                    
                     </div>
-                    
-                </div>
+                     </div>
+
                 <div className="options">
                     <div className="options-child">
                     <div className="icon-child"><i className="fas fa-stethoscope"></i></div>
@@ -132,10 +134,21 @@ class Homeheader extends Component {
                     
                 </div>
                 </div>
+                <div className="options">
+                    <div className="options-child">
+                    <div className="icon-child"><i className="far fa-hospital"></i></div>
+                    <div className="text-child"><FormattedMessage id="banner.child6"/></div>
+                    
                 </div>
                 </div>
-
-                    </div>
+                <div className="options">
+                    <div className="options-child">
+                    <div className="icon-child"><i className="far fa-hospital"></i></div>
+                    <div className="text-child"><FormattedMessage id="banner.child6"/></div>
+                    
+                </div>
+                </div>
+                </div>
 
                  
             </div>
