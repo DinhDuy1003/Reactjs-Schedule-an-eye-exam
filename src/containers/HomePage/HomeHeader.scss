@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif; /* Sử dụng font Poppins */
+}
+
+.home-header-container {
+    
+    height: 70px;
+    width: 100%;
+    padding: 0 40px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 110;
+
+  
+    // Bóng đổ xuống bên dưới
+    box-shadow: 0 12px 9px rgba(0, 0, 0, 0.2); // Bạn có thể tùy chỉnh thông số
+  
+    // Thay đổi độ mạnh của bóng khi cuộn
+    &.scrolled {
+      box-shadow: 0 14px 8px rgba(0, 0, 0, 0.3); // Bóng mạnh hơn khi cuộn xuống
+    }
+
+    .home-header-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        
+
+        .left-content {
+            width: 25%;
+            display: flex;
+            align-items: center;
+
+            .header-logo {
+                 //height: 140px;
+                 //width: 100%;
+                 cursor: pointer;
+                 transform: scale(0.5, 0.5);
+                 margin-left: -84px;
+                 font-size: 45px;
+                 font-weight: 600;
+                 color: #28a745;
+                 padding: 10px 20px;
+                 text-align: center;
+                 border-radius: 5px;
+                 cursor: pointer;
+                 transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng chuyển màu và bóng mờ */
+               
+                 &:hover {
+                   background-color: #28a745; /* Màu nền chuyển sang xanh khi di chuột vào */
+                   color: white; /* Màu chữ chuyển sang trắng khi di chuột vào */
+                   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng đổ */
+                 }
+                 
+            }
+
+            i {
+                font-size: 25px;
+                color: gray;
+                cursor: pointer;
+                &:hover {
+                    background-color: #28a745; /* Màu nền chuyển sang xanh khi di chuột vào */
+                    color: white; /* Màu chữ chuyển sang trắng khi di chuột vào */
+                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng đổ */
+                  }
+            }
+        }
+
+        .center-content {
+            width: 100%;
+            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .child-content1 {
+                background-color: #28a745; /* Màu nền mặc định (trong suốt hoặc trắng) */
+                  color: rgb(255, 250, 250); /* Màu chữ mặc định là xanh */
+                // border: 2px solid #28a745; /* Viền nút màu xanh */
+                padding: 5px 5px;
+                text-align: center;
+                font-size: 16px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng chuyển màu và bóng mờ */
+              
+                &:hover {
+                //   background-color: #28a745; /* Màu nền chuyển sang xanh khi di chuột vào */
+                //   color: white; /* Màu chữ chuyển sang trắng khi di chuột vào */
+                  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng đổ */
+                }
+                .subs-title {
+                    font-weight: 400;
+                    font-size: 12px;
+                    
+                }
+            }
+
+            .child-content {
+                background-color: transparent; /* Màu nền mặc định (trong suốt hoặc trắng) */
+                // color: #28a745; /* Màu chữ mặc định là xanh */
+                // border: 2px solid #28a745; /* Viền nút màu xanh */
+                padding: 5px 15px;
+                text-align: center;
+                font-size: 16px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng chuyển màu và bóng mờ */
+              
+                &:hover {
+                  background-color: #28a745; /* Màu nền chuyển sang xanh khi di chuột vào */
+                  color: white; /* Màu chữ chuyển sang trắng khi di chuột vào */
+                  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng đổ */
+                }
+                .subs-title {
+                    font-weight: 400;
+                    font-size: 12px;
+                    
+                }
+            }
+        }
+
+
+    }
+
+    .right-content {
+        width: 25%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .support {
+            padding-right: 50px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            
+
+            i {
+                font-size: 15px;
+                margin-right: 5px;
+                
+            }
+        }
+
+        .language-vi {
+            cursor: pointer;
+            opacity: 0.2;
+
+            &.active {
+                opacity: 1;
+
+                span {
+                    color: orange;
+                }
+            }
+
+            &:hover {
+                opacity: 0.8;
+                transform: translateY(-3px); /* Chữ và nút sẽ nhô lên khi di chuột vào */
+            }
+        }
+
+        .language-en {
+            margin: 0 10px;
+            cursor: pointer;
+            opacity: 0.2;
+
+            &.active {
+                opacity: 1;
+
+                span {
+                    color: rgba(255, 0, 0, 0.849);
+                }
+
+            }
+
+            &:hover {
+                opacity: 0.8;
+                transform: translateY(-3px); /* Chữ và nút sẽ nhô lên khi di chuột vào */
+            }
+        }
+
+
+    }
+
+}
+
+.home-header-banner {
+    // background: url('../../assets/bia.jpg');
+    // height: 515px;
+    // background-size: cover;
+    // background-position: center;
+    display: flex;
+    flex-direction: column;
+    
+    .search-bar {
+        background-color: #e0f4e0;
+        padding: 10px;
+        border-radius: 10px;
+        max-width: 900px;
+        margin: 0 auto;
+      
+        h2 {
+          font-size: 1.5rem;
+          font-weight: 350;
+          color: #1a1a1a;
+          margin-bottom: 10px;
+        }
+      
+        .search-container {
+          display: flex;
+          align-items: center;
+          background-color: #fff;
+          border-radius: 50px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          padding: 10px;
+          margin-bottom: 10px;
+      
+          .search-input {
+            flex: 1;
+            border: none;
+            padding: 10px 60px;
+            border-radius: 50px;
+            font-size: 1rem;
+            color: #333;
+            outline: none;
+      
+            &::placeholder {
+              color: #aaa;
+            }
+          }
+      
+          .location-input {
+            display: flex;
+            align-items: center;
+            border-left: 1px solid #ddd;
+            padding-left: 20px;
+            margin-left: 20px;
+      
+            span {
+              font-size: 0.875rem;
+              color: #555;
+              margin-right: 10px;
+            }
+      
+            input {
+              border: none;
+              background: transparent;
+              font-size: 1rem;
+              color: #333;
+              outline: none;
+            }
+          }
+      
+          .search-btn {
+            background-color: #2a64db;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 1rem;
+            margin-left: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+      
+            i {
+              font-size: 1.2rem;
+            }
+      
+            &:hover {
+              background-color: #1d4f9e;
+            }
+          }
+        }
+
+      }
+      
+
+    .content-up {
+        padding-top: 15px;
+        padding-bottom: 5px;
+        height: 65%;
+        display: flex;
+        border-bottom: 1.5px solid rgba(3, 17, 7, .2);
+        .title{
+          padding-left: 100px;
+          .title1 {
+            transform: scale(0.5, 0.5);
+            font-size: 45px;
+            font-weight: 600;
+            color: #28a745;
+            text-align: center;
+            cursor: pointer; 
+        }
+
+        .title2 {
+            text-align: center;
+            font-size: 30px;
+            //text-shadow: 1px 1px 1px #333;
+            color:  #2a64db;
+        }
+        }
+       
+
+        // .search-bar {
+        //      width: fit-content;
+        //      font-weight: 600;
+        //      display: flex;
+        //      justify-content: center;
+        //      align-items: center;
+        //      margin: 0 auto;
+        //      padding: 10px;
+        //      border-radius: 25px;
+        //      background: #f5f5ef;
+
+        //     font-size: 50px; /* Kích thước của icon */
+        //     color: #28a745; /* Màu sắc của icon */
+        //     transition: color 0.3s ease, transform 0.3s ease; /* Hiệu ứng chuyển đổi màu sắc và phóng to */
+        //     color: #007bff; /* Màu icon khi hover */
+        //     transform: scale(1.1); /* Tăng kích thước icon khi hover */
+        //    font-family: 'Poppins', sans-serif; /* Font chữ đẹp cho văn bản */
+        //     font-size: 16px;
+        //     margin-top: 10px;
+        //     color: #333; /* Màu chữ */
+        //     text-align: center; /* Canh giữa biểu tượng và văn bản */
+        
+        //     i {
+        //         margin: 0 5px;
+        //     }
+
+        //     input {
+        //         height: 30px;
+        //         width: 480px;
+        //         background: transparent;
+        //         border: none;
+        //         outline: none;
+        //     }
+        // }
+    }
+
+    // .conten-down {
+    //     height: 35%;
+    //     padding-bottom: 10px;
+    //     align-items: flex-end;
+    //     justify-content: center;
+    //     background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 1));
+
+    //     .options {
+    //         text-align: center;
+    //         // display: flex;
+    //          //gap: 70px;
+    //          justify-content: center;
+    //         display: grid;
+    //         grid-template-columns: repeat(3, 1fr); // Chia thành 4 cột
+
+        
+
+    //         .options-child {
+    //             width: 150px;
+    //             &:hover {
+    //                 transform: translateY(-10px); /* Nổi lên 10px */
+                   
+    //               }
+    //             .icon-child {
+    //                 background: white;
+    //                 width: 60px;
+    //                 height: 60px;
+    //                 padding: 10px;
+    //                 border-radius: 50%;
+    //                 text-align: center;
+    //                 margin: 0 auto;
+
+    //                 i {
+    //                     color: #49bce2;
+    //                     font-size: 35px;
+    //                 }
+                    
+    //             }
+
+
+    //             .text-child {
+    //                 //font-weight: 600px;
+    //                 font-size: 20px;
+    //                 cursor: pointer;
+
+    //                 &:hover {
+    //                     color: #49bce2;
+    //                 }
+    //             }
+
+
+    //         }
+    //     }
+    // }
+ 
+    .conten-down {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); // Chia thành 4 cột
+      gap: 20px; // Khoảng cách giữa các ô
+      padding: 20px;
+    
+      .options {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        background-color: #e0f4e0; // Màu nền xanh nhạt
+        border-radius: 10px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); // Tạo đổ bóng nhẹ
+        transition: transform 0.3s ease; // Hiệu ứng khi di chuột vào
+    
+        &:hover {
+          transform: scale(1.05); // Phóng to nhẹ khi di chuột vào
+        }
+    
+        .options-child {
+          display: flex;
+          //flex-direction: column;
+          align-items: center;
+          text-align: center;
+          color: #333;
+          font-weight: bold;
+          font-size: 16px;
+    
+          .icon-child {
+            font-size: 35px; // Kích thước của icon
+            margin-bottom: 10px; // Khoảng cách giữa icon và văn bản
+            color: #4caf50; // Màu của icon (có thể thay đổi theo yêu cầu)
+          }
+    
+          .text-child {
+            font-size: 18px; // Kích thước của văn bản
+            color: #333; // Màu của văn bản
+            padding-left: 15px;
+          }
+        }
+      }
+    }
+    
+
+
+}
