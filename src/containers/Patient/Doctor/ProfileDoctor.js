@@ -86,13 +86,14 @@ async componentDidUpdate(prevProps,prevState,snapshot){
             <div className="intro-doctor">
                    <div className="content-left"  
                     style ={{ backgroundImage: `url(${dataProfile && dataProfile.image ? dataProfile.image :''})`}} >
-
                     </div>
                 <div className="content-right">
                     <div className="up">
+                    <i class="fas fa-star star-icon"></i>
                         {language === LANGUAGES.VI ? nameVi:nameEn}
                     </div>
                     <div className="down">
+                    <i class="fas fa-id-badge"></i>
                         {isShowDescriptionDoctor === true ?
                             <>
                             {dataProfile && dataProfile.Markdown 

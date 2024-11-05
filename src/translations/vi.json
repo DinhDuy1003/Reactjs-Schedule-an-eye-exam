@@ -14,12 +14,14 @@
     "banner": {
         "title1": "NỀN TẢNG Y TẾ",
         "title2": "CHĂM SÓC SỨC KHỎE TOÀN DIỆN",
-        "child1": "Khám chuyên khoa",
-        "child2": "Khám từ xa",
-        "child3": "Khám tổng quát",
-        "child4": "Xét nghiệm y học",
-        "child5": "Sức khỏe tinh thần",
-        "child6": "Khám nha khoa"
+        "child1": "Đặt lịch Bác Sĩ",
+        "child2": "Đặt lịch Cơ sở y tế",
+        "child3": "Đặt lịch gói khám",
+        "child4": "Khám du học",
+        "child5": "Xét nghiệm tại nhà",
+        "child6": "Chụp cộng hưởng từ",
+        "child7": "Khám sức khỏe lái xe",
+        "child8": "Khám tổng quát"
     },
     "common": {
         "add": "Thêm",
@@ -100,7 +102,7 @@
             "book-free": " Và đặt (miễn phí)"
         },
         "extra-infor-doctor": {
-            "text-address": "Địa chỉ khám",
+            "text-address": "Địa chỉ khám:",
             "price": "Giá kiểm tra",
             "detail": "Xem chi tiết",
             "payment": "Bệnh nhân có thể thanh toán chi phí dưới hình thức:",

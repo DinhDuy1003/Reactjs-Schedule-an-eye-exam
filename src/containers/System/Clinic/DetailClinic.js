@@ -79,7 +79,9 @@ class DetailClinic extends Component {
                             return(
                                 <div className="each-doctor" key={index}>
                                      <div className="dt-content-left" >
+                                     
                                         <div className="profile-doctor">
+                                        
                                             <ProfileDoctor
                                                 doctorId={item}
                                                 isShowDescriptionDoctor ={true}

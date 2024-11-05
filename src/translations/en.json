@@ -14,12 +14,14 @@
     "banner": {
         "title1": "MEDICAL PLATFORM",
         "title2": "COMPREHENSIVE HEALTH CARE",
-        "child1": "Specialized examination",
-        "child2": "Remote examination",
-        "child3": "General examination",
-        "child4": "Medical test",
-        "child5": "Mental health",
-        "child6": "Dental examination"
+        "child1": "Schedule Doctor",
+        "child2": "Schedule Medical Facility",
+        "child3": "Order medical examination package",
+        "child4": "Study abroad examination",
+        "child5": "Home test",
+        "child6": "Magnetic resonance imaging",
+        "child7": "Driving health check",
+        "child8": "General examination"
     },
     "common": {
         "add": "Add",
@@ -100,7 +102,7 @@
             "book-free": " and book (free)"
         },
         "extra-infor-doctor": {
-            "text-address": "Address of examination",
+            "text-address": "Address of examination:",
             "price": "Examination price",
             "detail": "See details",
             "payment": "The patient can pay the cost in the form of:",

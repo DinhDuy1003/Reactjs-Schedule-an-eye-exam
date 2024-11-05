@@ -66,14 +66,16 @@ class Homeheader extends Component {
             <div className="home-header-banner">
                 
                 <div className="content-up">
-                <div className="title1"><FormattedMessage id="banner.title1"/> </div>
-                <div className="title2"><FormattedMessage id="banner.title2"/></div>
+                    <div className="title">
+                    <div className="title1"><FormattedMessage id="banner.title1"/> </div>
+                    <div className="title2"><FormattedMessage id="banner.title2"/></div>
+                    </div>
+                
                 {/* <div className="search">
                     <i className='fas fa-search'></i>
                     <input type="text" placeholder='Tìm Chuyên Khoa Khám Bệnh'></input>
                 </div>    */}
-                </div>
-                <div class="search-bar">
+                     <div class="search-bar">
                     <h2>Tìm sự chăm sóc bạn cần.</h2>
                     <div class="search-container">
                         <input type="text" placeholder="Bác sĩ, tình trạng hoặc thủ tục..." class="search-input" />
@@ -87,25 +89,27 @@ class Homeheader extends Component {
                     </div>
 
                     </div>
+                </div>
+           
                     
                     <div className="conten-down">
                 <div className="options">
                     <div className="options-child">
-                    <div className="icon-child"><i className="fas fa-user-md"></i></div>
+                    <div className="icon-child"><img src="https://bcare.vn/version2/pc/images/icons/ico-cate-1.png"/></div>
                     <div className="text-child"><FormattedMessage id="banner.child1"/></div>
                     </div>
                     </div>
 
                     <div className="options">
                     <div className="options-child">
-                    <div className="icon-child"><i className="fas fa-video"></i></div>
+                    <div className="icon-child"><img src="https://bcare.vn/version2/pc/images/icons/ico-cate-2.png"/></div>
                     <div className="text-child"><FormattedMessage id="banner.child2"/></div>
                     </div>
                      </div>
 
                 <div className="options">
                     <div className="options-child">
-                    <div className="icon-child"><i className="fas fa-stethoscope"></i></div>
+                    <div className="icon-child"><img src="https://bcare.vn/version2/pc/images/icons/ico-cate-3.png"/></div>
                     <div className="text-child"><FormattedMessage id="banner.child3"/></div>
                     
                     </div>
@@ -113,7 +117,7 @@ class Homeheader extends Component {
                 </div>
                 <div className="options">
                     <div className="options-child">
-                    <div className="icon-child"><i className="fas fa-flask"></i></div>
+                    <div className="icon-child"><img src="https://bcare.vn/version2/pc/images/icons/ico-cate-4.png"/></div>
                     <div className="text-child"><FormattedMessage id="banner.child4"/></div>
                     
                     </div>
@@ -121,7 +125,7 @@ class Homeheader extends Component {
                 </div>
                 <div className="options">
                     <div className="options-child">
-                    <div className="icon-child"><i className="fas fa-heartbeat"></i></div>
+                    <div className="icon-child"><img src="https://bcare.vn/version2/pc/images/icons/ico-cate-5.png"/></div>
                     <div className="text-child"><FormattedMessage id="banner.child5"/></div>
                     
                     </div>
@@ -129,22 +133,22 @@ class Homeheader extends Component {
                 </div>
                 <div className="options">
                     <div className="options-child">
-                    <div className="icon-child"><i className="far fa-hospital"></i></div>
+                    <div className="icon-child"><img src="https://bcare.vn/version2/pc/images/icons/ico-cate-6.png"/></div>
                     <div className="text-child"><FormattedMessage id="banner.child6"/></div>
                     
                 </div>
                 </div>
                 <div className="options">
                     <div className="options-child">
-                    <div className="icon-child"><i className="far fa-hospital"></i></div>
-                    <div className="text-child"><FormattedMessage id="banner.child6"/></div>
+                    <div className="icon-child"><img src="https://bcare.vn/version2/pc/images/icons/ico-cate-7.png"/></div>
+                    <div className="text-child"><FormattedMessage id="banner.child7"/></div>
                     
                 </div>
                 </div>
                 <div className="options">
                     <div className="options-child">
-                    <div className="icon-child"><i className="far fa-hospital"></i></div>
-                    <div className="text-child"><FormattedMessage id="banner.child6"/></div>
+                    <div className="icon-child"><img src="https://bcare.vn/version2/pc/images/icons/ico-cate-8.png"/></div>
+                    <div className="text-child"><FormattedMessage id="banner.child8"/></div>
                     
                 </div>
                 </div>

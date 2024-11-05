@@ -27,8 +27,8 @@ class DoctorExtrainfor extends Component {
    }
    async componentDidUpdate(prevProps,prevState,snapshot){
     if(this.props.language !== prevProps.language){
-
-    }
+  
+    }  
     if(this.props.doctorIdFromParent !== prevProps.doctorIdFromParent){
         let res =await getExraInforDoctorByid(this.props.doctorIdFromParent);
         if(res && res.errCode === 0){
@@ -51,13 +51,16 @@ class DoctorExtrainfor extends Component {
         return(
             <div className="doctor-extra-infor-cotainer">   
                 <div className="content-up">
-                    <div className="text-address">
+                    <div className="text-address" >
+                    <i class="fas fa-map-marker-alt"></i>
                         <FormattedMessage id="patient.extra-infor-doctor.text-address"/>
                     </div>
                     <div className="name-clinic"> 
+                    <i class="fas fa-hospital"></i>
                     {extraInfor && extraInfor.nameClinic ? extraInfor.nameClinic :''}
                     </div>
                     <div className="detail-address">
+                    <i class="fas fa-home"></i>
                         {extraInfor && extraInfor.addressClinic ? extraInfor.addressClinic :''}</div>
                 </div>
                 <div className="content-down">

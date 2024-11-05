@@ -202,7 +202,6 @@ body {
         border-radius: 10px;
         max-width: 900px;
         margin: 0 auto;
-        margin-bottom: 40px;
       
         h2 {
           font-size: 1.5rem;
@@ -283,59 +282,65 @@ body {
       
 
     .content-up {
-        background-image: linear-gradient(rgba(126, 126, 126, 0.25), rgba(255, 255, 255, 0.1));
         padding-top: 15px;
+        padding-bottom: 5px;
         height: 65%;
-
-        .title1 {
+        display: flex;
+        border-bottom: 1.5px solid rgba(3, 17, 7, .2);
+        .title{
+          padding-left: 100px;
+          .title1 {
+            transform: scale(0.5, 0.5);
+            font-size: 45px;
+            font-weight: 600;
+            color: #28a745;
             text-align: center;
-            font-size: 20px;
-            text-shadow: 1px 1px 1px #333;
-            color: rgb(36, 33, 33);
-            margin-top: 30px;
+            cursor: pointer; 
         }
 
         .title2 {
             text-align: center;
             font-size: 30px;
-            text-shadow: 1px 1px 1px #333;
-            color: rgb(53, 47, 47);
+            //text-shadow: 1px 1px 1px #333;
+            color:  #2a64db;
         }
+        }
+       
 
-        .search {
-             width: fit-content;
-             font-weight: 600;
-             display: flex;
-             justify-content: center;
-             align-items: center;
-             margin: 0 auto;
-             padding: 10px;
-             border-radius: 25px;
-             background: #f5f5ef;
+        // .search-bar {
+        //      width: fit-content;
+        //      font-weight: 600;
+        //      display: flex;
+        //      justify-content: center;
+        //      align-items: center;
+        //      margin: 0 auto;
+        //      padding: 10px;
+        //      border-radius: 25px;
+        //      background: #f5f5ef;
 
-            font-size: 50px; /* Kích thước của icon */
-            color: #28a745; /* Màu sắc của icon */
-            transition: color 0.3s ease, transform 0.3s ease; /* Hiệu ứng chuyển đổi màu sắc và phóng to */
-            color: #007bff; /* Màu icon khi hover */
-            transform: scale(1.1); /* Tăng kích thước icon khi hover */
-           font-family: 'Poppins', sans-serif; /* Font chữ đẹp cho văn bản */
-            font-size: 16px;
-            margin-top: 10px;
-            color: #333; /* Màu chữ */
-            text-align: center; /* Canh giữa biểu tượng và văn bản */
+        //     font-size: 50px; /* Kích thước của icon */
+        //     color: #28a745; /* Màu sắc của icon */
+        //     transition: color 0.3s ease, transform 0.3s ease; /* Hiệu ứng chuyển đổi màu sắc và phóng to */
+        //     color: #007bff; /* Màu icon khi hover */
+        //     transform: scale(1.1); /* Tăng kích thước icon khi hover */
+        //    font-family: 'Poppins', sans-serif; /* Font chữ đẹp cho văn bản */
+        //     font-size: 16px;
+        //     margin-top: 10px;
+        //     color: #333; /* Màu chữ */
+        //     text-align: center; /* Canh giữa biểu tượng và văn bản */
         
-            i {
-                margin: 0 5px;
-            }
+        //     i {
+        //         margin: 0 5px;
+        //     }
 
-            input {
-                height: 30px;
-                width: 480px;
-                background: transparent;
-                border: none;
-                outline: none;
-            }
-        }
+        //     input {
+        //         height: 30px;
+        //         width: 480px;
+        //         background: transparent;
+        //         border: none;
+        //         outline: none;
+        //     }
+        // }
     }
 
     // .conten-down {

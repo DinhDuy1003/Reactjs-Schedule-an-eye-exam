@@ -4,17 +4,24 @@
     .content-up{
         margin-bottom: 10px;
         .text-address{
-            text-transform: uppercase;
+            //text-transform: uppercase;
+            font-weight: 600;
             color: #333;
         }
         .name-clinic{
             padding: 5px 0;
-            font-weight: 600;
+           // font-weight: 600;
             color: #333;
+            i{
+                padding-right: 7px
+            }
         }
         .detail-address{
-            font-weight: 600;
+            //font-weight: 600;
             color: #333;
+            i{
+                padding-right: 7px
+            }
         }
     }
 

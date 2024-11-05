@@ -22,9 +22,18 @@
     
             .up{
                 font-weight: 600;
+                padding-bottom: 10px;
+                i{
+                    color: #f09307;
+                    padding-right: 5px;
+                }
             }
             .down{
                 text-align: justify;
+                i{
+                    color: #ff5200;
+                    padding-right: 7px;
+                }
             }
         }
     }
