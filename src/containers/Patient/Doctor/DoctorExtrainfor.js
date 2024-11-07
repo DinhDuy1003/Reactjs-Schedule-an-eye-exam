@@ -67,7 +67,9 @@ class DoctorExtrainfor extends Component {
 
                     
                 {isShowDetaiInfor === false && 
+                
                 <div className="short-infor">  
+                <i class="fas fa-dollar-sign"></i>
                 <FormattedMessage id="patient.extra-infor-doctor.price"/>
                 {extraInfor && extraInfor.priceTypeData && language === LANGUAGES.VI
                 && <NumberFormat
@@ -96,6 +98,7 @@ class DoctorExtrainfor extends Component {
                 {isShowDetaiInfor === true &&
                 <>
                 <div className="title-price">
+                    
                     <FormattedMessage id="patient.extra-infor-doctor.price"/></div>
                 <div className="detail-infor">
                     <div className="price">
