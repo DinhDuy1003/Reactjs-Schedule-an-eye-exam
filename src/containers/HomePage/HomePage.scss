@@ -133,24 +133,34 @@ cursor: pointer;
             }
 
             .btn-section {
-                border: 2px solid #707070;
                 float: right;
-                padding: 10px 15px;
-                font-weight: 450;
                 border: none;
                 outline: none;
                 display: block;
-                background: rgb(131, 200, 238);
-                color: black;
+                 // Màu nền gradient
+                background: linear-gradient(135deg, #28a745, #b993d6);
+                color: #fff; // Màu chữ
+                padding: 12px 24px; // Khoảng cách bên trong nút
+                font-size: 16px;
+                font-weight: bold;
+                border: none; // Bỏ viền
+                border-radius: 8px; // Bo góc nút
                 cursor: pointer;
-                text-transform: uppercase;
-                border-radius: 27%;
-                
+                transition: all 0.3s ease; // Hiệu ứng chuyển đổi mượt mà
+
+                // Đổ bóng
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
                 &:hover {
-                    background-color: #28a745; /* Màu nền chuyển sang xanh khi di chuột vào */
-                    color: white; /* Màu chữ chuyển sang trắng khi di chuột vào */
-                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng đổ */
-                  }
+                    background: linear-gradient(135deg, #b993d6, #28a745); // Thay đổi gradient khi hover
+                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); // Đổ bóng khi hover
+                    transform: translateY(-2px); // Đẩy nút lên khi hover
+                }
+
+                &:active {
+                    transform: translateY(1px); // Hiệu ứng nhấn
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+                }
             }
         }
 

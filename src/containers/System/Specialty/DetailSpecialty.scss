@@ -28,16 +28,15 @@
     .each-doctor{
         display: flex;
         width: 100%;
-        min-height: 300px;
+        min-height: 270px;
         margin: 15px 0;
         padding:10px;
-
         background-color: #fff;
         box-shadow: 0 1px 6px #20212447;
         border-radius: 8px;
 
         .dt-content-left{
-            width: 50%;
+            width: 85%;
             border-right: 1px solid #ddd;
 
             .profile-doctor-contrainer{
@@ -46,8 +45,9 @@
                 }
             }
         }
+
         .dt-content-right{
-            width: 50%;
+            width: 72%;
             padding: 10px;
 
             .doctor-schdule{
@@ -62,11 +62,22 @@
                 margin-top: 10px;
                 padding-top: 10px;
 
-                .doctor-extra-infor-container{
-                    padding-left: 0 !important;
-                }
+                // .doctor-extra-infor-container{
+                //     padding-left: 0 !important;
+                // }
 
             }
+        }
+        
+        .doctor-extra-infor{
+            border-top: 1px solid #ddd;
+            margin-top: 10px;
+            padding-top: 10px;
+            width: 60%;
+            .doctor-extra-infor-container{
+                padding-left: 0 !important;
+            }
+
         }
     }
 }
